@@ -8,6 +8,11 @@
       "schematics": {
         "@schematics/angular:application": {
           "strict": true
+        },
+        "locales":{
+          "en": "src/locale/messages.xlf",
+          "fr": "src/locale/messages.fr.xlf",
+          "de": "src/locale/messages.es.xlf",
         }
       },
       "root": "",
@@ -60,6 +65,12 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "fr":{
+              "localize": ["fr"]
+            }, 
+            "de":{
+              "localize": ["de"]
             }
           },
           "defaultConfiguration": "production"
@@ -72,6 +83,12 @@
             },
             "development": {
               "browserTarget": "i18nTest:build:development"
+            },
+            "fr": {
+              "browserTarget": "i18nTest:build:fr"
+            },
+            "de":{
+              "browserTarget": "i18nTest:build:de"
             }
           },
           "defaultConfiguration": "development"
