@@ -5,14 +5,16 @@
   "projects": {
     "i18nTest": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:application": {
-          "strict": true
-        },
+      "i18n":{
         "locales":{
           "en": "src/locale/messages.xlf",
           "fr": "src/locale/messages.fr.xlf",
           "de": "src/locale/messages.es.xlf",
+        }
+      },
+      "schematics": {
+        "@schematics/angular:application": {
+          "strict": true
         }
       },
       "root": "",
